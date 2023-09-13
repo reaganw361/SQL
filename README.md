@@ -21,6 +21,18 @@ VALUES
     (8, 'Smart Home Security Camera', 'Electronics', 79.95, 15, 4.1),
     (9, 'Air Purifier', 'Appliances', 129.50, 35, 4.6),
     (10, 'Premium Coffee Maker', 'Kitchen Supplies', 79.99, 50, 4.9),
+
+    SELECT *
+FROM SUPERSTORE
+ORDER BY PRICE
+
+SELECT SUM(PRICE)
+FROM SUPERSTORE
+
+SELECT SUM(CATEGORY), PRICE
+FROM SUPERSTORE
+GROUP BY PRICE
+
     (11, 'Ergonomic Office Chair', 'Furnishings', 189.00, 20, 4.5),
     (12, 'Wireless Earbuds', 'Electronics', 49.99, 75, 4.3),
     (13, 'Slow Cooker', 'Appliances', 49.95, 30, 4.7),
